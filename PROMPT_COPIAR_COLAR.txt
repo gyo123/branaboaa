@@ -1,0 +1,264 @@
+# PROMPT RÁPIDO PARA GEMINI AI (Copiar e Colar)
+
+---
+
+## Copie tudo abaixo e cole no Gemini AI
+
+---
+
+**PAPEL:**
+Você é um Expert em Web Development & UI/UX Design especializado em landing pages de alto desempenho para produtos digitais (ebooks, guias, cursos). Domina HTML semântico, CSS moderno (Grid, Flexbox, animações), JavaScript vanilla, e otimização para conversão. Pensa como designer + dev profissional.
+
+**TAREFA:**
+Crie uma landing page profissional COMPLETA (3 arquivos) para vender um ebook de viagem: **"Guia BranaBoa — Santa Cruz de la Sierra"**.
+
+Arquivos a entregar:
+1. `index.html` (semântico, acessível, bem-estruturado)
+2. `style.css` (responsivo, moderno, comentado)
+3. `script.js` (vanilla JS, interações suaves)
+
+**CONTEXTO - IDENTIDADE VISUAL:**
+
+Paleta de Cores:
+- Verde Primário: #0B8A3E (floresta boliviana)
+- Amarelo Ouro: #FFD400 (destaque)
+- Branco: #FFFFFF
+- Fundo Claro: #F8F9FA
+- Texto Escuro: #1A1A1A
+
+Tipografia:
+- Headings: Montserrat (700, 800, 900 weight) — Google Fonts
+- Body: Poppins (400, 500, 600, 700 weight) — Google Fonts
+
+Design:
+- Sombras: `box-shadow: 0 8px 24px rgba(11,138,62,0.12)`
+- Border-radius: 16px (cards), 20px (imagens), 50px (botões)
+- Gradiente primário: `linear-gradient(135deg, #0B8A3E 0%, #FFD400 100%)`
+- Transições: `transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)`
+
+---
+
+**ESTRUTURA OBRIGATÓRIA DA PÁGINA:**
+
+**1. HEADER (Sticky Navigation)**
+- Logo "✈ SANTA CRUZ" esquerda
+- Menu: "Como Funciona", "Depoimentos", "Conteúdo", "FAQ"
+- CTA: "Comprar o Guia Prático" (botão gradient)
+- Mobile: hamburger menu animado
+- Backdrop blur ao scroll
+
+**2. HERO SECTION (Full-Bleed Background)**
+- Imagem de fundo paralaxe (background-attachment: fixed no desktop)
+- Overlay gradiente escuro esquerda→direita: rgba(0,0,0,0.5) → rgba(0,0,0,0.1)
+- Conteúdo esquerda (max-width 600px):
+  - H1: "Viaje para Santa Cruz de la Sierra com segurança, autonomia e ZERO perrengue."
+  - Parágrafo descritivo
+  - Botões: "Comprar Agora" (primário) + "Ver Demonstração" (secundário)
+  - Subtext: "✓ Acesso imediato ao PDF · ✓ 50 páginas · ✓ Atualizações gratuitas"
+- Badge fixo top-right: "🎯 NOVO" com animação bounce
+- Responsivo: em mobile, background-attachment: scroll, overlay mais escuro
+
+**3. PROBLEMA & SOLUÇÃO (Split Layout)**
+- Esquerda: Título "Você provavelmente já se perguntou", lista de 4 problemas (❌), "Apresentamos a solução", descrição, lista de benefícios, 2 botões
+- Direita: Imagem `assets/santa-cruz-street-1.jpg` com border-radius 20px, hover effect scale(1.04)
+- Fundo: #F8F9FA
+
+**4. COMO FUNCIONA (Grid de 5 Cards)**
+- Título: "Como Funciona em 5 Passos Simples"
+- 5 cards com número grande (pseudo-element ::before), título, descrição
+- Cards em grid responsivo: 5 col desktop, 2 col tablet, 1 col mobile
+- Numeração sutil em background: `font-size 120px, opacity 0.12`
+- Hover: translateY(-12px), sombra aumenta
+- Animação fade-in ao scroll (AOS library)
+
+**5. SHOWCASE SECTION (Split Imagem + Texto)**
+- Título: "Explore Santa Cruz como um Local"
+- Esquerda (desktop): Imagem `assets/catedral.jpg` com border-radius 20px
+- Direita (desktop): H2, parágrafos, lista com emojis
+- Mobile: imagem em cima, texto embaixo
+- Hover imagem: scale(1.04), sombra aumenta
+
+**6. O QUE VOCÊ ENCONTRA (4 Cards com Ícones)**
+- Título: "O que você encontra no Guia Prático"
+- 4 highlight cards: ícone emoji grande, título, descrição
+- Cards com border-top #0B8A3E
+- Grid: 4 col desktop, 2 col tablet, 1 col mobile
+
+**7. MÓDULOS (6 Cards com Lista)**
+- Título: "Módulos e Formato"
+- 6 cards com ícone + descrição (Módulo 01, 02, etc)
+- Cards com border-left verde, hover translateX(+6px)
+- Exemplo: "📘 Módulo 01: Curiosidades culturais e contexto local"
+
+**8. DEPOIMENTOS (Carousel Horizontal)**
+- Título: "Depoimentos dos Primeiros Leitores"
+- Carousel com scroll-snap (scroll-snap-type: x mandatory)
+- 3+ cards: avatar circular 50x50 (`assets/testimonial-*.jpg`), nome, profissão, 5★, texto
+- Desktop: 33.33% width (3 visíveis), tablet 50%, mobile 100%
+- Scrollbar customizado (cor verde)
+
+**9. PURCHASE CTA (Fundo Gradient)**
+- Fundo: gradient verde→amarelo
+- Centrado: H2 "Transforme Sua Viagem", descrição
+- Preço grande: "R$ 57,90"
+- Botão: "Comprar Agora"
+- Subtext: "✓ Acesso imediato · ✓ Garantia 7 dias · ✓ Atualizações grátis"
+
+**10. GARANTIA (Trust Section)**
+- Ícone escudo com checkmark ✓
+- H2: "Garantia de Satisfação — 7 dias"
+- Descrição: devolução 100% sem perguntas
+
+**11. FAQ (Accordion com 8 Itens)**
+- Título: "Perguntas Frequentes"
+- 8 accordion items com toggle suave (JS)
+- Ícone +/− que muda ao expandir
+- Perguntas: Como recebo? Celular? Atualizado? Suporte? Offline? Solo/família? Entrega? Privacidade?
+
+**12. CTA FINAL**
+- Título: "Pronto para Planejar Sua Viagem dos Sonhos?"
+- Descrição, botão "Quero meu Guia Agora"
+- Fundo #F8F9FA
+
+**13. FOOTER**
+- 4 colunas (desktop), 2 (tablet), 1 (mobile)
+- Col 1: Logo, descrição, Instagram link
+- Col 2: Links rápidos (Como Funciona, Depoimentos, Conteúdo, FAQ)
+- Col 3: Legal (Termos, Privacidade, Contato, Reembolso)
+- Col 4: Newsletter (email input + Subscribe button)
+- Copyright rodapé
+
+---
+
+**IMAGENS DISPONÍVEIS (Pasta `assets/`):**
+- `hero.jpg` — fundo hero full-bleed
+- `santa-cruz-street-1.jpg` — split problem section
+- `catedral.jpg` — showcase section
+- `palmetum.jpg`, `plaza.jpg`, `architecture.jpg` — fallbacks
+- `testimonial-1.jpg`, `testimonial-2.jpg`, `testimonial-3.jpg` — avatares depoimentos
+
+Use `<picture>` element com fallbacks: `.webp` → `.jpg` → `.svg`
+Lazy loading: `loading="lazy"`, `decoding="async"`
+Object-fit: `cover`, object-position: `center`
+
+---
+
+**ANIMAÇÕES & INTERAÇÕES OBRIGATÓRIAS:**
+
+CSS Animations:
+- `fade-in`: opacity 0 → 1, 0.8s ease
+- `slideUp`: translateY 30px → 0, 0.8s ease
+- `bounce` (badge hero): ±8px, 2s loop
+- `float` (cards): ±20px, 4s loop
+- `pulse` (CTAs): scale 1 → 1.05 → 1, 2.5s loop
+
+JavaScript:
+- Header: adicione `.scrolled` class ao scroll (mudar background/shadow)
+- Menu hamburger: toggle `.active` para animar (3 spans → X)
+- Accordion: toggle `.open` para expandir/recolher smooth
+- Smooth scroll: links com `#` (já funciona com `scroll-behavior: smooth`)
+- **AOS Integration:**
+```html
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, offset: 100, once: true, easing: 'ease-in-out' });
+</script>
+```
+
+---
+
+**ACESSIBILIDADE & SEO:**
+
+Obrigatórios:
+- Alt text em todas as imagens
+- ARIA labels em botões, modais, menus
+- Hierarquia H1 → H2 → H3 (não pular níveis)
+- Contraste: 4.5:1 mínimo (texto branco em fundo escuro)
+- Formulário newsletter: `<form>`, `<input type="email">`, `<button type="submit">`
+- Meta tags: description, Open Graph, Twitter Card
+- JSON-LD Schema: Product schema para ebook
+- Viewport: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+---
+
+**RESPONSIVIDADE:**
+
+Breakpoints:
+- Mobile: 0-480px (1 coluna, stacked)
+- Tablet: 481-1024px (2 colunas, partial grid)
+- Desktop: 1025px+ (full layout, 3-4 colunas)
+
+Mobile-First:
+- Header: stack logo, hamburger (não menu horizontal)
+- Hero: background-attachment scroll (não fixed), overlay 40-50% escuro
+- Buttons: full-width em mobile
+- Grid: 1 col mobile → 2 tablet → 3+ desktop
+- Font-sizes: usar `clamp(min, calc, max)`
+- Touch-friendly: min 44x44px buttons
+
+---
+
+**PERFORMANCE & QUALIDADE:**
+
+Críticos:
+- CSS crítico inline (styles above-the-fold)
+- Minify CSS/JS para produção
+- Lazy load: imagens, AOS (não bloqueie render)
+- Google Fonts: display=swap
+- Evite animations em scroll crítico
+- Validação: W3C HTML & CSS validators
+- Lighthouse score > 80
+
+---
+
+**CONTEÚDO RESUMIDO:**
+
+Hero H1: "Viaje para Santa Cruz de la Sierra com segurança, autonomia e ZERO perrengue."
+
+Hero p: "O Guia BranaBoa é o material mais completo feito por brasileiros que vivem na Bolívia, com tudo o que você precisa para explorar, economizar e aproveitar a cidade — sem buscas infinitas ou informações desatualizadas."
+
+Preço: "R$ 57,90"
+
+Depoimentos (exemplos):
+- Rafaela: "No primeiro hostel conheci @fitsampaito que me ajudou na aclimatação... Ela criou o @branaboa para ajudar outros viajantes!"
+- Tereza: "Me salvou nessa viagem! Tudo ficou muito mais claro e seguro."
+- Gyo: "Fiquei realmente satisfeito com o serviço... Sem dúvidas recomendaria!"
+
+FAQ (8 perguntas): Como recebo? Celular? Atualizado? Suporte? Offline? Solo/família? Entrega? Privacidade?
+
+---
+
+**ARQUIVOS A ENTREGAR:**
+1. `index.html` — HTML5 semântico, bem-estruturado
+2. `style.css` — CSS responsivo, bem-organizado, comentado
+3. `script.js` — Vanilla JS, sem dependências (além de AOS), comentado
+
+**REQUISITOS DE QUALIDADE:**
+✓ Validação HTML (W3C)
+✓ CSS sem conflitos ou especificidade alta
+✓ Sem console.log() deixado
+✓ Código comentado em seções críticas
+✓ Responsive: mobile (375px), tablet (768px), desktop (1200px+)
+✓ Performance: Lighthouse > 80
+✓ Acessibilidade: WCAG 2.1 AA mínima
+
+---
+
+**DICAS EXTRAS (Valorizado):**
+- Scroll-to-top button flutuante em mobile
+- Formulário newsletter com placeholder
+- Micro-interações em cards
+- CSS Grid para layouts complexos
+- Dark mode toggle (opcional)
+- Google Analytics placeholder
+
+---
+
+**RESUMO:**
+Landing page de ALTA CONVERSÃO para vender ebook de viagem.
+Style: Moderno, profissional, leve, com imagens de qualidade + tipografia elegante + cores vibrantes.
+Objetivo: Converter visitantes em compradores através de prova social, urgência, garantia e CTAs claros.
+
+Boa sorte! Crie algo extraordinário. 🚀
+
+---

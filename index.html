@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guia BranaBoa: O guia definitivo para brasileiros em Santa Cruz de la Sierra. Viaje com segurança, autonomia e zero perrengue.">
+    <meta name="theme-color" content="#0B8A3E">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Guia BranaBoa — Santa Cruz de la Sierra">
+    <meta property="og:description" content="Viaje com segurança e autonomia. O guia prático para brasileiros na Bolívia.">
+    <meta property="og:image" content="assets/hero.jpg">
+
+    <title>Guia BranaBoa — Santa Cruz de la Sierra</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- FontAwesome (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Leaflet (Mapa Interativo) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-plane-departure"></i> SANTA CRUZ
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
+                    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#conteudo" class="nav-link">Conteúdo</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li class="mobile-only"><a href="https://pay.hotmart.com/R102771309O?bid=1766781139370" class="btn btn-primary">Comprar Agora</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://pay.hotmart.com/R102771309O?bid=1766781139370" class="btn btn-gradient desktop-only">Comprar o Guia</a>
+                <div class="hamburger" id="hamburger" aria-label="Menu" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <!-- Certifique-se que o arquivo hero.jpg existe ou use uma das bolivia_imagens -->
+        <div class="hero-bg" style="background-image: url('assets/hero.jpg');"></div>
+        
+        <div class="badge-new">🎯 NOVO</div>
+
+        <div class="container hero-content" data-aos="fade-up">
+            <h1>Viaje para Santa Cruz de la Sierra com segurança, autonomia e <span class="text-highlight">ZERO perrengue.</span></h1>
+            <p>O Guia BranaBoa é o material mais completo feito por brasileiros que vivem na Bolívia, com tudo o que você precisa para explorar, economizar e aproveitar a cidade.</p>
+            
+            <div class="hero-btns">
+                <a href="https://pay.hotmart.com/R102771309O?bid=1766781139370" class="btn btn-primary pulse">Comprar Agora</a>
+                <a href="#conteudo" class="btn btn-secondary">Ver Demonstração</a>
+            </div>
+
+            <div class="hero-trust">
+                <span><i class="fa-solid fa-check"></i> Acesso imediato ao PDF</span>
+                <span><i class="fa-solid fa-check"></i> 50 páginas</span>
+                <span><i class="fa-solid fa-check"></i> Atualizações gratuitas</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PROBLEMA & SOLUÇÃO (Alterado para DARK MODE - Verde Escuro) -->
+    <!-- Isso elimina o branco e cria contraste elegante com o Hero -->
+    <section class="split-section bg-dark-green">
+        <div class="container split-container">
+            <div class="split-text" data-aos="fade-right">
+                <span class="eyebrow text-accent">A REALIDADE</span>
+                <h2 class="text-white">Você provavelmente já se perguntou:</h2>
+                <ul class="problem-list text-white-dim">
+                    <li>❌ "É seguro andar sozinho à noite?"</li>
+                    <li>❌ "Como troco dinheiro sem ser enganado?"</li>
+                    <li>❌ "Onde comer bem sem passar mal?"</li>
+                    <li>❌ "O que fazer além do óbvio?"</li>
+                </ul>
+
+                <div class="solution-block dark-glass">
+                    <h3 class="text-accent">✅ Apresentamos a Solução</h3>
+                    <p class="text-white">Condensamos anos de experiência vivendo na cidade em um manual prático. Não é apenas um roteiro turístico, é um manual de sobrevivência e prazer.</p>
+                </div>
+                
+                <a href="https://pay.hotmart.com/R102771309O?bid=1766781139370" class="btn btn-primary">Quero Viajar Tranquilo</a>
+            </div>
+            
+            <div class="split-image" data-aos="fade-left">
+                <!-- Rua de Santa Cruz de la Sierra -->
+                <picture>
+                    <source srcset="assets/santa-cruz-street-1.jpg" type="image/jpeg">
+                    <img src="assets/santa-cruz-street-1.jpg" alt="Rua de Santa Cruz de la Sierra" loading="lazy">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. COMO FUNCIONA (Com Imagem de Fundo + Overlay Escuro) -->
+    <!-- Correção de legibilidade aplicada aqui -->
+    <section class="how-it-works bg-photo-section bg-photo-1" id="como-funciona">
+        <!-- Overlay escuro é aplicado via CSS na classe bg-photo-section -->
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="text-shadow-heavy">Como Funciona em 5 Passos</h2>
+                <p class="text-white-shadow">Simples, digital e imediato.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <h3>Compra Segura</h3>
+                    <p>Faça o pagamento via cartão ou Pix em ambiente criptografado.</p>
+                </div>
+                <div class="step-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <h3>E-mail Imediato</h3>
+                    <p>Receba o link de acesso no seu e-mail em menos de 2 minutos.</p>
+                </div>
+                <div class="step-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <h3>Download</h3>
+                    <p>Baixe o PDF no seu celular, tablet ou computador.</p>
+                </div>
+                <div class="step-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <h3>Acesso Offline</h3>
+                    <p>Salve o arquivo e acesse mesmo sem internet durante o voo.</p>
+                </div>
+                <div class="step-card glass-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="step-number">05</div>
+                    <h3>Atualizações</h3>
+                    <p>Receba novas versões gratuitamente sempre que atualizarmos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SHOWCASE SECTION (Fundo Off-White para respiro visual) -->
+    <section class="showcase bg-off-white">
+        <div class="container split-container reverse-mobile">
+            <div class="split-image" data-aos="fade-right">
+                <picture>
+                    <source srcset="assets/plaza.jpg" type="image/jpg">
+                    <img src="assets/plaza.jpg" alt="Praça 24 de Setembro - Santa Cruz" loading="lazy" class="img-frame">
+                </picture>
+            </div>
+            <div class="split-text" data-aos="fade-left">
+                <h2>Explore Santa Cruz como um Local</h2>
+                <p>Esqueça as armadilhas para turistas. Vamos te levar aos lugares que realmente valem a pena.</p>
+                <ul class="emoji-list">
+                    <li>📸 <strong>Fotografia:</strong> Os melhores ângulos da Praça 24 de Setembro.</li>
+                    <li>🌮 <strong>Gastronomia:</strong> Onde comer o verdadeiro Salteña e Majadito.</li>
+                    <li>🏛️ <strong>História:</strong> Entenda as Missões Jesuíticas.</li>
+                    <li>🌿 <strong>Natureza:</strong> Passeios secretos no Biocentro Güembé.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. O QUE VOCÊ ENCONTRA (Com Imagem de Fundo) -->
+    <section class="features features-section" id="conteudo">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2>O que você encontra no Guia</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Roteiros Prontos</h3>
+                    <p>Sugestões de 3, 5 e 7 dias detalhados hora a hora.</p>
+                </div>
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-icon">💰</div>
+                    <h3>Economia Real</h3>
+                    <p>Média de preços de táxi, comida e hospedagem atualizados.</p>
+                </div>
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-icon">🏥</div>
+                    <h3>Saúde e Segurança</h3>
+                    <p>Telefones úteis, hospitais recomendados e dicas de vacina.</p>
+                </div>
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-icon">🚌</div>
+                    <h3>Transporte</h3>
+                    <p>Como usar os "micros", trufis e apps de transporte com segurança.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. MÓDULOS (Fundo Dark Green) -->
+    <section class="modules bg-dark-green">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="text-white">Módulos e Formato</h2>
+                <p class="text-white-dim">Estruturado para leitura rápida.</p>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card dark-card" data-aos="fade-left" data-aos-delay="100">
+                    <h4>📘 Módulo 01</h4>
+                    <p>Curiosidades culturais e contexto local</p>
+                </div>
+                <div class="module-card dark-card" data-aos="fade-left" data-aos-delay="150">
+                    <h4>✈️ Módulo 02</h4>
+                    <p>Planejamento: Documentos, Câmbio e Clima</p>
+                </div>
+                <div class="module-card dark-card" data-aos="fade-left" data-aos-delay="200">
+                    <h4>🏨 Módulo 03</h4>
+                    <p>Onde ficar: Melhores bairros e hotéis</p>
+                </div>
+                <div class="module-card dark-card" data-aos="fade-left" data-aos-delay="250">
+                    <h4>🍽️ Módulo 04</h4>
+                    <p>Gastronomia: O que comer e beber</p>
+                </div>
+                <div class="module-card dark-card" data-aos="fade-left" data-aos-delay="300">
+                    <h4>🎒 Módulo 05</h4>
+                    <p>Passeios Imperdíveis (Dentro e Fora da cidade)</p>
+                </div>
+                <div class="module-card dark-card" data-aos="fade-left" data-aos-delay="350">
+                    <h4>🆘 Módulo 06</h4>
+                    <p>Dicionário de sobrevivência e Emergências</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. MAPA INTERATIVO -->
+    <section class="mapa-section" id="mapa-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2>Explore Santa Cruz no Mapa</h2>
+                <p>Descubra pontos de interesse, restaurantes, hospedagem e muito mais</p>
+            </div>
+        </div>
+
+        <!-- Filtros -->
+        <div class="mapa-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="todos">
+                        Todos (20)
+                    </button>
+                    <button class="filter-btn" data-filter="cultural">
+                        🏛️ Cultural (5)
+                    </button>
+                    <button class="filter-btn" data-filter="food">
+                        🍽️ Restaurantes (6)
+                    </button>
+                    <button class="filter-btn" data-filter="hotel">
+                        🏨 Hospedagem (4)
+                    </button>
+                    <button class="filter-btn" data-filter="nature">
+                        🌳 Natureza (3)
+                    </button>
+                    <button class="filter-btn" data-filter="security">
+                        🚨 Segurança (2)
+                    </button>
+                </div>
+
+                <!-- Busca -->
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="mapa-search" 
+                        placeholder="🔍 Buscar local..." 
+                        class="search-input"
+                    >
+                    <button class="btn-geolocation" title="Minha Localização">
+                        📍
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mapa + Sidebar -->
+        <div class="mapa-wrapper">
+            <!-- Sidebar (listagem de pontos) -->
+            <aside class="mapa-sidebar">
+                <h3>Pontos de Interesse</h3>
+                <ul id="pontos-list" class="pontos-list">
+                    <!-- Preenchido via JavaScript -->
+                </ul>
+            </aside>
+
+            <!-- Mapa -->
+            <div id="mapa" class="mapa-container"></div>
+        </div>
+    </section>
+
+    <!-- 9. DEPOIMENTOS (Com Imagem de Fundo) -->
+    <section class="testimonials bg-photo-section bg-photo-3" id="depoimentos">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="text-shadow-heavy">DEPOIMENTOS </h2>
+                <p class="text-white-shadow">Histórias reais de quem viajou com o guia.</p>
+            </div>
+            
+            <div class="testimonials-grid-view">
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-header">
+                        <img src="https://ui-avatars.com/api/?name=GYO&background=0B8A3E&color=fff" alt="GYO">
+                        <div>
+                            <h4>Gyo</h4>
+                            <span class="role">Viajante Solo</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <picture>
+                        <source srcset="depoimentos (1).webp" type="image/webp">
+                        <img src="depoimentos (1).jpg" alt="Print de conversa - Rafaela" class="print-image">
+                    </picture>
+                </div>
+
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-header">
+                        <img src="https://ui-avatars.com/api/?name=georgia&background=0B8A3E&color=fff" alt="Leonardo">
+                        <div>
+                            <h4>Georgia Bicalho</h4>
+                            <span class="role">Viajante solo</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <picture>
+                        <source srcset="depoimentos (4).webp" type="image/webp">
+                        <img src="depoimentos (4).jpg" alt="Print de conversa - Leonardo" class="print-image">
+                    </picture>
+                </div>
+
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-header">
+                        <img src="https://ui-avatars.com/api/?name=rafaela&background=0B8A3E&color=fff" alt="Marina">
+                        <div>
+                            <h4>Rafaela</h4>
+                            <span class="role">Blogueira de Viagens</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <picture>
+                        <source srcset="depoimentos (5).webp" type="image/webp">
+                        <img src="depoimentos (5).jpg" alt="Print de conversa - Marina" class="print-image">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. PURCHASE CTA -->
+    <section class="cta-purchase" id="comprar">
+        <div class="container text-center" data-aos="zoom-in">
+            <h2>Transforme Sua Viagem</h2>
+            <p>Não perca tempo pesquisando em 50 sites diferentes. Tenha tudo na palma da mão.</p>
+            
+            <div class="price-box">
+                <span class="currency">R$</span>
+                <span class="amount">57,90</span>
+            </div>
+
+            <a href="https://pay.hotmart.com/R102771309O?bid=1766781139370" class="btn btn-primary btn-large pulse">Comprar Agora</a>
+            
+            <div class="cta-subtext">
+                <span><i class="fa-solid fa-bolt"></i> Acesso imediato</span>
+                <span><i class="fa-solid fa-lock"></i> Compra segura</span>
+                <span><i class="fa-solid fa-gift"></i> Atualizações grátis</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. GARANTIA (Off-White) -->
+    <section class="guarantee bg-off-white">
+        <div class="container guarantee-container" data-aos="fade-up">
+            <div class="guarantee-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div class="check-badge">✓</div>
+            </div>
+            <div class="guarantee-text">
+                <h3>Garantia de Satisfação — 7 dias</h3>
+                <p>Se você achar que o guia não ajudou no seu planejamento, nós devolvemos 100% do seu dinheiro. Sem letras miúdas e sem perguntas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. FAQ -->
+    <section class="faq bg-off-white" id="faq">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Perguntas Frequentes</h2>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Como recebo o guia?
+                        <i class="fa-solid fa-plus icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Logo após a aprovação do pagamento, você receberá um e-mail com o link para download imediato do PDF.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Consigo ler no celular?
+                        <i class="fa-solid fa-plus icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Sim! O formato é responsivo e otimizado para leitura em smartphones, tablets e computadores.</p>
+                    </div>
+                </div>
+                <!-- Mais items de FAQ -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. CTA FINAL -->
+    <section class="final-cta bg-dark-green">
+        <div class="container text-center">
+            <h2 class="text-white">Pronto para Planejar Sua Viagem dos Sonhos?</h2>
+            <p class="text-white-dim">Garanta sua autonomia agora mesmo.</p>
+            <a href="https://pay.hotmart.com/R102771309O?bid=1766781139370" class="btn btn-primary">Quero meu Guia Agora</a>
+        </div>
+    </section>
+
+    <!-- 13. FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo footer-logo">
+                    <i class="fa-solid fa-plane-departure"></i> SANTA CRUZ
+                </a>
+                <p>O guia definitivo para brasileiros explorarem a Bolívia com segurança.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#conteudo">Conteúdo</a></li>
+                </ul>
+            </div>
+            <div class="footer-col newsletter-col">
+                <h4>Novidades</h4>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Obrigado!');">
+                    <input type="email" placeholder="E-mail" required>
+                    <button type="submit">OK</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+    <script src="mapa.js"></script>
+</body>
+</html>
